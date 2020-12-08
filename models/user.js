@@ -5,15 +5,10 @@ const jwt = require('jsonwebtoken');
 const Library = require('./library.js');
 
 const userSchema = new mongoose.Schema({
-	firstname : {
+	name: {
 		type: String,
 		required: true,
 		trim: true
-	},
-	surname: {
-		type: String,
-		required: true,
-		trim: true,
 	},
 	email: {
 		type: String,
