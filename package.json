@@ -1,0 +1,25 @@
+{
+  "name": "attic-api",
+  "version": "1.0.0",
+  "description": "This is the api of attic website",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Ankan Mallick",
+  "license": "ISC",
+  "dependencies": {
+    "@okta/oidc-middleware": "^4.0.1",
+    "@okta/okta-sdk-nodejs": "^4.2.0",
+    "bcrypt": "^5.0.0",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.10.18",
+    "validator": "^13.1.17"
+  }
+}
