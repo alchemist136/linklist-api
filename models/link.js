@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const linkSchema = mongoose.model.Schema({
+const linkSchema = new mongoose.Schema({
 	title: {
 		type: String,
 		required: true,

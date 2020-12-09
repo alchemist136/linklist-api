@@ -3,23 +3,24 @@ const validator = require('validator');
 const User = require('./user.js');
 const Link = require('./link.js');
 
-const librarySchema = mongoose.model.Schema({
+const librarySchema = new mongoose.Schema({
 	title: {
 		type: String,
 		required: true,
 	},
 	author: {
-		type: mongoose.Schema.Types.ObjectId;
+		type: mongoose.Schema.Types.ObjectId,
 		ref: 'User',
 	},
 	date: {
 		type: Date,
 		required: true,
-		default: Date.now,
 	},
 	links: [{
-		_id: mongoose.Schema.Types.ObjectId,
-		ref: 'Link',
+		_id: {
+			type: mongoose.Schema.Types.ObjectId,
+			ref: 'Link',
+		}
 	}]
 });
 
